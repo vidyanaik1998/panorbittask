@@ -18,7 +18,7 @@ body{
 }
 
 :where(.css-dev-only-do-not-override-k83k30).ant-tabs >.ant-tabs-nav .ant-tabs-nav-wrap, :where(.css-dev-only-do-not-override-k83k30).ant-tabs >div>.ant-tabs-nav .ant-tabs-nav-wrap{
-    @apply bg-[#1457b4] w-[260px] rounded-t-[20px] rounded-b-[20px] py-10 px-10
+    @apply bg-[#4a43af] w-[260px] rounded-t-[20px] rounded-b-[20px] py-10 px-10
 }
 :where(.css-dev-only-do-not-override-k83k30).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
     @apply text-white
@@ -31,7 +31,7 @@ body{
   @apply justify-center;
 }
 :where(.css-dev-only-do-not-override-k83k30).ant-tabs{
-  @apply xl:min-h-[103vh]
+  @apply xl:min-h-[115vh]
 }
 :where(.css-dev-only-do-not-override-k83k30).ant-collapse>.ant-collapse-item >.ant-collapse-header{
   @apply bg-blue-600 !rounded-t-[20px] !rounded-b-none;
@@ -59,10 +59,10 @@ body{
   @apply rounded-[20px] ;
 }
    ::-webkit-scrollbar {
-    width: 6px;
+     @apply w-[6px];
 }
    ::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+     @apply rounded-[5px];
   }
 
   ::-webkit-scrollbar-track {
@@ -90,21 +90,11 @@ body{
 
 
   section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 400px;
-    padding-top: 100px;
-    background: #4a43af;
+    @apply relative flex  flex-col items-center min-h-[400px] pt-[100px] bg-[#4a43af];
 }
 
 .curve {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
+  @apply absolute h-[250px] w-[100%] bottom-0 text-center;
 }
 
 .curve::before {
